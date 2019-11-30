@@ -1,0 +1,33 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+.project
+.classpath
+.cache
+target
+bin
+dist
+lib_managed
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# This is tricky, so know what you're doing here if you intend on changing how we
+# include/exclude stuff in .idea (the IntelliJ project directory). If you exclude .idea/,
+# then everything under it will always be excluded (even if some later negative
+# exclusion pattern (“unignore”) might match something under .idea/). The trailing /*
+# is significant:
+#  - The pattern dir/ excludes a directory named dir and (implicitly) everything under it.
+#     With dir/, Git will never look at anything under dir, and thus will never apply any
+#     of the "un-exclude" patterns to anything under dir.
+#  - The pattern dir/* says nothing about dir itself; it just excludes everything under
+#    dir. With dir/*, Git will process the direct contents of dir, giving other patterns
+#    a chance to "un-exclude" some bit of the content (!dir/sub/).
+# See: http://stackoverflow.com/a/5534865
+!.idea/
+.idea/*
+!.idea/runConfigurations/
