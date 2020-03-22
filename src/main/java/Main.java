@@ -113,7 +113,7 @@ public final class Main {
         final ServletHolder holder = new ServletHolder(DefaultServlet.class);
         holder.setAsyncSupported(true); // Async supported = true
         holder.setInitOrder(1); // Load on startup = true
-        holder.setInitParameter(DefaultServlet.CONTEXT_INIT + "acceptRanges", "true");
+        context.setInitParameter(DefaultServlet.CONTEXT_INIT + "acceptRanges", "true");
         context.addServlet(holder, SERVLET_MAPPING_UNDER_CONTEXT);
 
         // We do not use JSPs (Java Server Pages) so disable the defaults descriptor
