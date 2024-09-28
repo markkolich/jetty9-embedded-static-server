@@ -12,11 +12,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <slf4j-api.version>2.0.6</slf4j-api.version>
-        <logback.version>1.4.5</logback.version>
+        <logback.version>1.5.8</logback.version>
 
-        <jetty.version>9.4.50.v20221201</jetty.version>
+        <jetty.version>9.4.56.v20240826</jetty.version>
 
-        <picocli.version>4.7.1</picocli.version>
+        <picocli.version>4.7.6</picocli.version>
     </properties>
 
     <dependencies>
